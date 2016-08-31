@@ -1,0 +1,215 @@
+﻿body { 
+	background-color: rgb(248, 145, 13);
+	margin: 0;
+	padding: 0;
+}
+
+
+.float-left {
+	float:left;
+}
+.float-right {
+	float:right;
+}
+.clear {
+	clear:both;
+}
+
+.cp-elem {
+	margin: 10px;
+	font-family: 'Malgun Gothic';
+}
+
+#menu {
+    
+}
+
+#world {
+	position: absolute;
+    bottom: 0px;
+	margin-bottom: 7px;
+    height: 400px;
+	width: 100%;
+    border-bottom: 8px #fff solid;
+    border-top: 8px #fff solid;
+	overflow: hidden;
+    vertical-align: bottom;
+}
+
+
+
+.koinichi {
+	position: absolute;
+}
+
+.koinichi > .top {
+	height: 55px;
+}
+.koinichi > .top > .antenna {
+	position: relative;
+	top: 53px;
+	bottom: 0;
+	background-color: #fff;
+	width: 70px;
+	height: 8px;
+	border-radius: 15px;
+}
+.koinichi > .top > .left-antenna {
+	left: 0px;
+	transform-origin: 100% 50%;
+}
+.koinichi > .top > .right-antenna {
+	right: 0px;
+	transform-origin: 0% 50%;
+}
+
+
+.koinichi > .middle {
+	height: 70px;
+}
+.koinichi > .middle > .face {
+    margin: 0px auto;
+	border-radius: 5px;
+	border: 7px solid #fff;
+	width: 139px; 
+	height: 70px;
+	background-color: rgb(248, 145, 13);
+    box-sizing: border-box;
+}
+.koinichi > .middle > .face > .eye {
+	position: relative;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: #fff;
+} .eye:hover { box-shadow: 0px 0px 10px #fff; }
+.koinichi > .middle > .face > .left-eye {
+	top : 13px;
+	left: 18px;
+} 
+.koinichi > .middle > .face > .right-eye {
+	top : 13px;
+	right: 19px;
+}
+
+.koinichi > .middle > .face > .mouth {
+    margin: 10px auto;
+	border-radius: 100%;
+	width: 18px;
+	height: 15px;
+	background-color: #fff;
+} .mouth:hover { box-shadow: 0px 0px 15px #fff; }
+
+.koinichi > .middle > .arm {
+	border: none;
+	background-color: #fff;
+	width: 37px;
+	height: 8px;
+	border-radius: 25px;
+	
+	transform: rotate(-50deg);
+}
+.koinichi > .middle > .left-arm {
+	position: relative;
+	margin-top: 25px;
+	margin-left: -32px;
+	transform-origin: 100% 50%;
+}
+.koinichi > .middle > .right-arm {
+	position: relative;
+	margin-top: -46px;
+	margin-right: -32px;
+	transform-origin: 0% 50%;
+}
+
+
+.koinichi > .bottom {
+	height: 10px;
+}
+.koinichi > .bottom > .leg {
+	position: relative;
+	background-color: #fff;
+	height: 10px;
+	width: 8px;
+}
+.koinichi > .bottom > .left-leg {
+	left: 13px;
+}
+.koinichi > .bottom > .right-leg {
+	right: 13px;
+}
+
+
+
+.tree {
+	position: absolute;
+    box-sizing: border-box;
+}
+
+.tree > .top {
+    height: 80px;
+}
+.tree > .top > .leaf {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+	background-color: rgb(248, 145, 13);
+}
+.tree > .top > .leaf-top {
+    top: -10px;
+    left: 40px;
+    height: 30px;
+    border: 7px #fff solid;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.tree > .top > .leaf-left {
+    top: 20px;
+    left: 0px;
+    width: 80px; /* see z-index */
+    border: 7px #fff solid;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: -1; /* to hide other trees */
+}
+.tree > .top > .leaf-right {
+    top: 20px;
+    left: 87px;
+    border: 7px #fff solid;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.tree > .bottom {
+    position: absolute;
+    left: 40px;
+    bottom: 0px;
+    height: 90px;
+    width: 40px;
+	background-color: rgb(248, 145, 13);
+    border-left: 7px #fff solid;
+    border-right: 7px #fff solid;
+}
+
+
+
+.cloud {
+	position: absolute;
+    box-sizing: border-box;
+}
+
+.cloud > .clump {
+    position: absolute;
+    border: 4px #fff solid;
+	background-color: rgb(248, 145, 13);
+    box-sizing: border-box;
+}
+
+#control-panel {
+	position: fixed;
+	top: 50px;
+	left: 50px;
+}
